@@ -124,10 +124,7 @@ $(function () {
       ui.item.siblings(".selected").removeClass("hidden");
       $(".selected").removeClass("selected");
     },
-    update: function () {
-      // updatePostOrder();
-      // updateAdd();
-    },
+    update: function () {},
   });
 
   $("#sortable1, #sortable2, #sortable3").disableSelection();
@@ -137,23 +134,6 @@ $(function () {
   );
 });
 console.log("All items: ", itemArray);
-// function updatePostOrder() {
-//   var arr = [];
-//   $("#sortable2 li").each(function () {
-//     arr.push($(this).attr("id"));
-//   });
-//   $("#postOrder").val(arr.join(","));
-//   console.log("From sortable2: ", arr);
-// }
-
-// function updateAdd() {
-//   var arr = [];
-//   $("#sortable3 li").each(function () {
-//     arr.push($(this).attr("id"));
-//   });
-//   $("#add").val(arr.join(","));
-//   console.log("From sortable3: ", arr);
-// }
 
 $(".sortable")
   .sortable()
